@@ -13,12 +13,16 @@ def linear_search():    # Tìm kiếm tuần tự phiên bản nâng cấp
 
 
 def main():
-    linear_search()
+    a = linear_search()
+    if len(a) == 0:                     # Nếu danh sách tìm kiếm nãy rỗng => thông báo ra màn hình là không tìm thấy phần tử
+      print("Không tìm thấy phần tử")
+    else:                               # Nếu danh sách tìm kiếm nãy ≠ rỗng => thông báo ra màn hình các vị trí của các phần tử
+      print("Đã tìm thấy!\nVị trí thứ", a)
 
 
 def time():
     elapsed_time = timeit.timeit(main, number=1)
-    print("Thời gian thực thi của hàm là:", elapsed_time, "giây")
+    print("Thời gian thực thi của thuật toán là:", elapsed_time, "giây")
 
 
 if __name__ == "__main__":
