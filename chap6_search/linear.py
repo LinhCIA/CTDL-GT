@@ -25,5 +25,6 @@ def time():
     print("Thời gian thực thi của thuật toán là:", elapsed_time, "giây")
 
 
+
 if __name__ == "__main__":
     time()
