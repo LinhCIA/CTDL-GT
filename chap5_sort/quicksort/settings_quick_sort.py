@@ -1,25 +1,11 @@
-# Mã nguồn python thuật toán sắp xếp (quick sort)
-
-def sx_quick_sort(arr, low, high):
-    if low < high:
-        # Chọn phần tử chốt
-        pivot = arr[high]
-        # Phân vùng mảng thành 3 phần: nhỏ hơn pivot, bằng pivot, lớn hơn pivot
-        i, j, k = low, low, high
-        while j <= k:
-            if arr[j] < pivot:
-                arr[i], arr[j] = arr[j], arr[i]
-                i += 1
-                j += 1
-            elif arr[j] == pivot:
-                j += 1
-            else:
-                arr[j], arr[k] = arr[k], arr[j]
-                k -= 1
-        # Đệ quy sắp xếp các phần tử nhỏ hơn và lớn hơn pivot
-        sx_quick_sort(arr, low, i - 1)
-        sx_quick_sort(arr, k + 1, high)
-    return arr
-
-
-
+# Mã nguồn Python thuật toán sắp xếp nhanh(quick sort) phiên bản clean code nhất
+def sx_quick_sort(arr):
+    # Nếu dãy không quá một phần tử => trả về dãy mà không cần làm gì cả
+    if len(arr) <= 1:
+        return arr
+    # Nếu không thì chia ra 3 phần nhỏ hơn, bằng với, và lớn hơn pivot để trị (để sắp xếp)
+    pivot = arr[0]                                              # Chọn phần tử pivot
+    left = [x for x in arr if x < pivot]                        # Phần bên trái chứa các phần tử nhỏ hơn pivot
+    middle = [x for x in arr if x == pivot]                     # Phần ở giữa chứa phần tử bằng với pivot
+    right = [x for x in arr if x > pivot]                       # Phần bên phải chứa các phần tử lớn hơn pivot
+    return sx_quick_sort(left) + middle + sx_quick_sort(right)  # Tổng hợp dãy sau khi đã sắp xếp là LpR
