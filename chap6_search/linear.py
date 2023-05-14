@@ -2,8 +2,8 @@ import timeit
 
 
 def linear_search():    # Tìm kiếm tuần tự phiên bản nâng cấp
-    big_arr = [int(i) for i in input("Big array: ").split(" ")]  # nhập các phần tử của list lớn từ bàn phím
-    small_arr = [int(i) for i in input("Small array: ").split(" ")]  # nhập các phần tử của list nhỏ từ bàn phím
+    big_arr = [int(i) for i in input("Big array: ").split(",")]  # nhập các phần tử của list lớn từ bàn phím
+    small_arr = [int(i) for i in input("Small array: ").split(",")]  # nhập các phần tử của list nhỏ từ bàn phím
     found_indexes = []  # mảng chứa các vị trí cần tìm. ban đầu, mảng này rỗng
 
     for i in range(len(big_arr)):
