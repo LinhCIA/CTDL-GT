@@ -9,7 +9,7 @@ def linear_search():    # Tìm kiếm tuần tự phiên bản nâng cấp
     for i in range(len(big_arr)):
         if big_arr[i] in small_arr:
             found_indexes.append(i)
-    return found_indexes 
+    return found_indexes
 
 
 def main():
