@@ -1,4 +1,4 @@
-import timeit 
+import timeit
 
 
 def linear_search():    # Tìm kiếm tuần tự phiên bản nâng cấp
