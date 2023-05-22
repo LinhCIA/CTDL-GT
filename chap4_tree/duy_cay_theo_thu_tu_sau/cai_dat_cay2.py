@@ -29,13 +29,14 @@ post_order_traversal(root)
 
 
 # cây được cài đặt như sau
-'''
-     1
-   /   \
-  2     3
- / \
-4   5
-'''
+"""
+        1
+      /   \ 
+    2      3
+   / \ 
+  4   5 
+"""
+
 
 # Kết quả đầu ra
 '''
