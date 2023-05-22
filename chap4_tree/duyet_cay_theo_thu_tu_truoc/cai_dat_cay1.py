@@ -6,7 +6,7 @@ class Node:         # Lớp Node đại diện cho một nút trong cây
         self.left = None         # Thuộc tính left => lưu giá trị cây con bên trái
         self.right = None        # Thuộc tính right => lưu giá trị cây con bên phải
     # Nguyên lí hoạt động của thuật toán:
-    # nút gốc được duyêt đầu tiên -> duyệt cây con bên trái -> duyệt cây con bên phải
+    # nút gốc được duyệt đầu tiên -> duyệt cây con bên trái -> duyệt cây con bên phải
 
 
 def pre_order_traversal(node):      # Sử dụng đệ quy để duyệt cây
@@ -14,4 +14,3 @@ def pre_order_traversal(node):      # Sử dụng đệ quy để duyệt cây
         print(node.value)                   # duyệt nút gốc
         pre_order_traversal(node.left)      # duyệt cây bên trái
         pre_order_traversal(node.right)     # duyệt cây bên phải
-
