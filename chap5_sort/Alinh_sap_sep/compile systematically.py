@@ -1,5 +1,5 @@
 """
-Chương trình này sẽ là tổng hợp lại các thuật toán trong chương 5 và lập trình theo yêu cầu của người dùng
+Chương trình này sẽ là tổng hợp lại các thuật toán trong chương 5 và lập trình theo yêu cầu của người dùng 
 """
 
 # Gọi các hàm sắp xếp từ các thư mục và các file
