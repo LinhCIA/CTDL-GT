@@ -2,7 +2,7 @@
 Chương trình này sẽ là tổng hợp lại các thuật toán trong chương 5 và lập trình theo yêu cầu của người dùng 
 """
 
-# Gọi các hàm sắp xếp từ các thư mục và các file
+# Gọi các hàm sắp xếp từ các thư mục và các file 
 from chap5_sort.selection_sort.settings_select_sort import sx_chon
 from chap5_sort.insertion_sort.settings_insertion_sort import sx_chen
 from chap5_sort.bubble_sort.settings_buble_sort import sx_noi_bot
