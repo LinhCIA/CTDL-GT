@@ -8,7 +8,7 @@ from chap5_sort.insertion_sort.settings_insertion_sort import sx_chen
 from chap5_sort.bubble_sort.settings_buble_sort import sx_noi_bot
 from chap5_sort.quicksort.settings_quick_sort import sx_quick_sort
 from chap5_sort.heap_sort.settings__heap_sort import sx_heap_sort
-from chap5_sort.merge_sort.settings_merge_sort import sx_merge_sort
+from chap5_sort.merge_sort.settings_merge_sort import sx_merge_sort 
 import sys 
 import timeit 
 
