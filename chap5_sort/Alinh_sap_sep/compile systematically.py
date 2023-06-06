@@ -71,6 +71,7 @@ def time():  # Hàm đo thời gian thực của thuật toán
 
 
 if __name__ == "__main__":
+    
     time()
 
 
