@@ -10,7 +10,7 @@ from chap5_sort.quicksort.settings_quick_sort import sx_quick_sort
 from chap5_sort.heap_sort.settings__heap_sort import sx_heap_sort
 from chap5_sort.merge_sort.settings_merge_sort import sx_merge_sort
 import sys
-import timeit
+import timeit 
 
 
 def main():
